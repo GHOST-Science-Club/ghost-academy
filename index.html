@@ -1,44 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event Name - Event Date</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f9; }
-    header { background-color: #4CAF50; color: white; padding: 1em; text-align: center; }
-    main { padding: 2em; max-width: 800px; margin: auto; }
-    footer { text-align: center; padding: 1em; background-color: #ddd; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Youth</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff4d4d, #cc0000);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #f7f7f7;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #cc0000;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0 0 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .hero a {
+            background: #cc0000;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+
+        .hero a:hover {
+            background: #ff4d4d;
+        }
+
+        .modules {
+            padding: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background: #f7f7f7;
+        }
+
+        .module-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            flex: 0 1 calc(30% - 20px);
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .module-card h3 {
+            color: #cc0000;
+            font-size: 1.2rem;
+        }
+
+        .module-card p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .module-card a {
+            color: #cc0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .module-card a:hover {
+            color: #ff4d4d;
+        }
+
+        .about, .registration, .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #ff4d4d;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .module-card {
+                flex: 0 1 calc(100% - 40px);
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>Event Name</h1>
-    <p>Date: Event Date</p>
-    <p>Location: Event Location</p>
-  </header>
-
-  <main>
-    <h2>About the Event</h2>
-    <p>Write a brief description of the event here, explaining what it’s about, who’s hosting it, and any special details attendees should know.</p>
-
-    <h2>Agenda</h2>
-    <ul>
-      <li>10:00 AM - Opening Remarks</li>
-      <li>11:00 AM - Workshop 1</li>
-      <li>12:00 PM - Lunch Break</li>
-      <li>1:00 PM - Workshop 2</li>
-      <li>3:00 PM - Closing Session</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>For more information, contact us at: <a href="mailto:contact@example.com">contact@example.com</a></p>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Event Name. All Rights Reserved.</p>
-  </footer>
-
+    <header>
+        <h1>AI for Youth</h1>
+        <p>Explore the World of Artificial Intelligence</p>
+    </header>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#modules">Modules</a>
+        <a href="#about">About</a>
+        <a href="#registration">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="hero" class="hero">
+        <h2>Welcome to AI for Youth</h2>
+        <p>Learn the technology shaping our future.</p>
+        <a href="#registration">Join Now</a>
+    </section>
+    <section id="modules" class="modules">
+        <div class="module-card">
+            <h3>Module 1</h3>
+            <p>Introduction to Artificial Intelligence</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="module-card">
+            <h3>Module 2</h3>
+            <p>Machine Learning Basics</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="module-card">
+            <h3>Module 3</h3>
+            <p>AI in Practice: Workshops</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="module-card">
+            <h3>Module 4</h3>
+            <p>AI and Society</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="module-card">
+            <h3>Module 5</h3>
+            <p>Final Project</p>
+            <a href="#">Learn More</a>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About the Course</h2>
+        <p>Our AI course is tailored for high school students to explore and innovate with the latest AI technologies. With hands-on workshops and a final project, this program is your gateway to understanding the power of AI.</p>
+    </section>
+    <section id="registration" class="registration">
+        <h2>Register Now</h2>
+        <p>Fill out the form below to join our exciting AI course.</p>
+        <a href="#">Registration Form</a>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@aiforyouth.com | Phone: 123-456-7890</p>
+        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2024 AI for Youth. All rights reserved. | <a href="#contact">Contact</a></p>
+    </footer>
 </body>
 </html>
