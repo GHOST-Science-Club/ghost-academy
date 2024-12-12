@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI for Youth</title>
+    <title>GHOST Academy</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: helvetica, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
@@ -14,7 +14,7 @@
         }
 
         header {
-            background: linear-gradient(135deg, #ff4d4d, #cc0000);
+            background: #c01c08;
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -38,17 +38,17 @@
 
         nav a {
             text-decoration: none;
-            color: #cc0000;
+            color: #c01c08;
             margin: 0 15px;
             font-weight: bold;
         }
 
         nav a:hover {
-            color: #ff4d4d;
+            color: #e65e4c;
         }
 
         .hero {
-            background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+            background: url('resources/banner.png') no-repeat center center/cover;
             text-align: center;
             color: white;
             padding: 100px 20px;
@@ -107,7 +107,7 @@
         }
 
         .module-card a {
-            color: #cc0000;
+            color: #c01c08;
             text-decoration: none;
             font-weight: bold;
         }
@@ -116,9 +116,18 @@
             color: #ff4d4d;
         }
 
-        .about, .registration, .contact {
-            padding: 40px 20px;
+        .about, .contact {
+            padding: 20px;
             text-align: center;
+        }
+        .details{
+            text-align: center;
+        }
+
+        .details-list {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
         }
 
         footer {
@@ -129,7 +138,7 @@
         }
 
         footer a {
-            color: #ff4d4d;
+            color: #c01c08;
             text-decoration: none;
         }
 
@@ -150,64 +159,65 @@
 </head>
 <body>
     <header>
-        <h1>AI for Youth</h1>
-        <p>Explore the World of Artificial Intelligence</p>
+        <h1>GHOST Academy</h1>
+        <p>Wejdź z nami w świat AI!</p>
     </header>
     <nav>
         <a href="#hero">Home</a>
-        <a href="#modules">Modules</a>
-        <a href="#about">About</a>
-        <a href="#registration">Register</a>
-        <a href="#contact">Contact</a>
+        <a href="#modules">Moduły</a>
+        <a href="#about">O nas</a>
+        <a href="#contact">Kontakt</a>
     </nav>
-    <section id="hero" class="hero">
-        <h2>Welcome to AI for Youth</h2>
-        <p>Learn the technology shaping our future.</p>
-        <a href="#registration">Join Now</a>
+    <section id="hero" class="hero"></section>
     </section>
     <section id="modules" class="modules">
         <div class="module-card">
-            <h3>Module 1</h3>
-            <p>Introduction to Artificial Intelligence</p>
-            <a href="#">Learn More</a>
+            <h3>Moduł 1</h3>
+            <p>Wprowadzenie do sztucznej inteligencji</p>
         </div>
         <div class="module-card">
-            <h3>Module 2</h3>
-            <p>Machine Learning Basics</p>
-            <a href="#">Learn More</a>
+            <h3>Moduł 2</h3>
+            <p>Uczenie maszynowe — czym jest i jak działa?</p>
         </div>
         <div class="module-card">
-            <h3>Module 3</h3>
-            <p>AI in Practice: Workshops</p>
-            <a href="#">Learn More</a>
+            <h3>Moduł 3</h3>
+            <p>Dane – kluczowy element w uczeniu maszynowym</p>
         </div>
         <div class="module-card">
-            <h3>Module 4</h3>
-            <p>AI and Society</p>
-            <a href="#">Learn More</a>
+            <h3>Moduł 4</h3>
+            <p>Klasyfikacja — podstawowy problem w ML</p>
         </div>
         <div class="module-card">
-            <h3>Module 5</h3>
-            <p>Final Project</p>
-            <a href="#">Learn More</a>
+            <h3>Moduł 5</h3>
+            <p>Regresja – prognozowanie liczbowe</p>
         </div>
     </section>
-    <section id="about" class="about">
-        <h2>About the Course</h2>
-        <p>Our AI course is tailored for high school students to explore and innovate with the latest AI technologies. With hands-on workshops and a final project, this program is your gateway to understanding the power of AI.</p>
+    <section id="about" class="about", markdown>
+        <h2>O GHOST Academy</h2>
+        <p>GHOST Academy to cykl spotkań organizowanych przez Koło Naukowe GHOST (Group of Horribly Optimistic STatisticians) działające przy Wydziale Informatyki i Telekomunikacji Politechniki Poznańskiej. Celem programu jest wprowadzenie uczniów szkół średnich w fascynujący świat sztucznej inteligencji oraz pokazanie praktycznych zastosowań tych technologii z wykorzystaniem języka programowania Python.</p>
     </section>
-    <section id="registration" class="registration">
-        <h2>Register Now</h2>
-        <p>Fill out the form below to join our exciting AI course.</p>
-        <a href="#">Registration Form</a>
+    <section id="details" class="details">
+        <h3><strong>Terminy i struktura zajęć</strong></h3>
+        <strong>Termin:</strong>&nbsp;luty &ndash; maj 2025 </br>
+        <strong>Godzina:</strong>&nbsp;godziny popołudniowe w dzień roboczy </br>
+        <strong>Forma:</strong>&nbsp;zajęcia hybrydowe (stacjonarne i online) </br>
+        <h3>Każdy z pięciu moduł&oacute;w tematycznych obejmuje trzy spotkania:</h3>
+        <ol class="details-list">
+        <li><strong>Spotkanie stacjonarne</strong>&nbsp;na Politechnice Poznańskiej &ndash; wprowadzenie teoretyczne w formie przystępnego wykładu prowadzonego przez student&oacute;w.</li>
+        <li><strong>Warsztaty online</strong>&nbsp;&ndash; praktyczne zajęcia z realizacją projektu w środowisku Google Colab.</li>
+        <li><strong>Konsultacje online</strong>&nbsp;&ndash; sesja pytań i odpowiedzi oraz wyjaśnianie ewentualnych wątpliwości związanych z tematyką modułu.</li>
+        </ol>
     </section>
     <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Email: contact@aiforyouth.com | Phone: 123-456-7890</p>
-        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        <h2>Kontakt</h2>
+        <p>Email: ghost@put.poznan.pl </p>
+        <p>Bądź na bieżąco: <a href="https://ghost.put.poznan.pl/?fbclid=IwY2xjawGxDVxleHRuA2FlbQIxMAABHQBBt32wwu0rttGqZ8OjLK2QAraK5fHRH6HgvvfVS_H52EKf-vs1vCXLmQ_aem_L6GCW5Wm3xvaJYUcI2rAcw">Strona internetowa GHOST</a>
+            <a href="https://www.facebook.com/pp.ghost">Facebook</a>
+            <a href="https://www.linkedin.com/company/ghost-put/">LinkedIn</a></p>
+
     </section>
     <footer>
-        <p>&copy; 2024 AI for Youth. All rights reserved. | <a href="#contact">Contact</a></p>
+        <p>&copy; 2024 GHOST Academy. Wszystkie prawa zastrzeżone | <a href="#contact">Kontakt</a></p>
     </footer>
 </body>
 </html>
