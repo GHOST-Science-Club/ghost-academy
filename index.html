@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GHOST Academy</title>
     <style>
         body {
-            font-family: helvetica, sans-serif;
+            font-family: monospace, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
@@ -48,33 +49,15 @@
         }
 
         .hero {
-            background: url('resources/banner.png') no-repeat center center/cover;
-            text-align: center;
-            color: white;
-            padding: 100px 20px;
+            background-color: #c01c08;
+            width: 100%;
         }
 
-        .hero h2 {
-            font-size: 2.5rem;
-            margin: 0 0 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-
-        .hero a {
-            background: #cc0000;
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            font-size: 1rem;
-            border-radius: 5px;
-        }
-
-        .hero a:hover {
-            background: #ff4d4d;
+        #banner-image {
+            display: block;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .modules {
@@ -116,11 +99,20 @@
             color: #ff4d4d;
         }
 
-        .about, .contact {
+        .about,
+        .contact {
             padding: 20px;
             text-align: center;
+
         }
-        .details{
+
+        .about p {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        .details {
             text-align: center;
         }
 
@@ -157,6 +149,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>GHOST Academy</h1>
@@ -168,8 +161,9 @@
         <a href="#about">O nas</a>
         <a href="#contact">Kontakt</a>
     </nav>
-    <section id="hero" class="hero"></section>
-    </section>
+    <div id="hero">
+        <img src="resources/banner.png" , alt="website banner" , id="banner-image">
+    </div>
     <section id="modules" class="modules">
         <div class="module-card">
             <h3>Moduł 1</h3>
@@ -192,9 +186,12 @@
             <p>Regresja – prognozowanie liczbowe</p>
         </div>
     </section>
-    <section id="about" class="about", markdown>
+    <section id="about" class="about" , markdown>
         <h2>O GHOST Academy</h2>
-        <p>GHOST Academy to cykl spotkań organizowanych przez Koło Naukowe GHOST (Group of Horribly Optimistic STatisticians) działające przy Wydziale Informatyki i Telekomunikacji Politechniki Poznańskiej. Celem programu jest wprowadzenie uczniów szkół średnich w fascynujący świat sztucznej inteligencji oraz pokazanie praktycznych zastosowań tych technologii z wykorzystaniem języka programowania Python.</p>
+        <p>GHOST Academy to cykl spotkań organizowanych przez Koło Naukowe GHOST (Group of Horribly Optimistic
+            STatisticians) działające przy Wydziale Informatyki i Telekomunikacji Politechniki Poznańskiej. Celem
+            programu jest wprowadzenie uczniów szkół średnich w fascynujący świat sztucznej inteligencji oraz pokazanie
+            praktycznych zastosowań tych technologii z wykorzystaniem języka programowania Python.</p>
     </section>
     <section id="details" class="details">
         <h3><strong>Terminy i struktura zajęć</strong></h3>
@@ -203,21 +200,28 @@
         <strong>Forma:</strong>&nbsp;zajęcia hybrydowe (stacjonarne i online) </br>
         <h3>Każdy z pięciu moduł&oacute;w tematycznych obejmuje trzy spotkania:</h3>
         <ol class="details-list">
-        <li><strong>Spotkanie stacjonarne</strong>&nbsp;na Politechnice Poznańskiej &ndash; wprowadzenie teoretyczne w formie przystępnego wykładu prowadzonego przez student&oacute;w.</li>
-        <li><strong>Warsztaty online</strong>&nbsp;&ndash; praktyczne zajęcia z realizacją projektu w środowisku Google Colab.</li>
-        <li><strong>Konsultacje online</strong>&nbsp;&ndash; sesja pytań i odpowiedzi oraz wyjaśnianie ewentualnych wątpliwości związanych z tematyką modułu.</li>
+            <li><strong>Spotkanie stacjonarne</strong>&nbsp;na Politechnice Poznańskiej &ndash; wprowadzenie teoretyczne
+                w formie przystępnego wykładu prowadzonego przez student&oacute;w.</li>
+            <li><strong>Warsztaty online</strong>&nbsp;&ndash; praktyczne zajęcia z realizacją projektu w środowisku
+                Google Colab.</li>
+            <li><strong>Konsultacje online</strong>&nbsp;&ndash; sesja pytań i odpowiedzi oraz wyjaśnianie ewentualnych
+                wątpliwości związanych z tematyką modułu.</li>
         </ol>
     </section>
     <section id="contact" class="contact">
         <h2>Kontakt</h2>
         <p>Email: ghost@put.poznan.pl </p>
-        <p>Bądź na bieżąco: <a href="https://ghost.put.poznan.pl/?fbclid=IwY2xjawGxDVxleHRuA2FlbQIxMAABHQBBt32wwu0rttGqZ8OjLK2QAraK5fHRH6HgvvfVS_H52EKf-vs1vCXLmQ_aem_L6GCW5Wm3xvaJYUcI2rAcw">Strona internetowa GHOST</a>
+        <p>Bądź na bieżąco: <a
+                href="https://ghost.put.poznan.pl/?fbclid=IwY2xjawGxDVxleHRuA2FlbQIxMAABHQBBt32wwu0rttGqZ8OjLK2QAraK5fHRH6HgvvfVS_H52EKf-vs1vCXLmQ_aem_L6GCW5Wm3xvaJYUcI2rAcw">Strona
+                internetowa GHOST</a>
             <a href="https://www.facebook.com/pp.ghost">Facebook</a>
-            <a href="https://www.linkedin.com/company/ghost-put/">LinkedIn</a></p>
+            <a href="https://www.linkedin.com/company/ghost-put/">LinkedIn</a>
+        </p>
 
     </section>
     <footer>
         <p>&copy; 2024 GHOST Academy. Wszystkie prawa zastrzeżone | <a href="#contact">Kontakt</a></p>
     </footer>
 </body>
+
 </html>
