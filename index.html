@@ -1,235 +1,100 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GHOST Academy</title>
-    <link rel="icon" type="x-icon" href="./resources/favicon_32.ico"/>
-    <style>
-        body {
-            font-family: monospace, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-        }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GHOST Academy</title>
+		<link rel="icon" type="x-icon" href="./resources/favicon_32.ico"/>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
 
-        header {
-            background: #c01c08;
-            color: white;
-            text-align: center;
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
+	<body>
+		<nav>
+			<a href="#main_page_a">Home</a>
+			<a href="#modules_a">Moduły</a>
+			<a href="#about_a">O nas</a>
+			<a href="#contact_a">Kontakt</a>
+		</nav>
+		<a id="main_page_a" class="a_href"></a>
+		<div id="main_page">
+			<div id="head">
+				<img src="resources/ghost_academy_logo.png" , alt="Main baner", id="logo">
+			</div>
+		</div>
+		<div id="banners">
+			<img class="banner_logo", src="resources/PP_znak_WIiT_RGB.png" , alt="Logo Wydziału Informatyki i Telekomunikacji">
+			<img class="banner_logo", src="resources/PP_logotyp_RGB.png" , alt="Logo Politechniki Poznańskiej" >
+			<img class="banner_logo", src="resources/ghost_logo_red_white.png" , alt="Logo koła naukowego GHOST">
+		</div>
+		<a id="modules_a" class="a_href"></a>
+		<section id="modules" class="modules">
+			<div class="module-card">
+				<h3>O GHOST Academy</h3>
+				<p class='description'>GHOST Academy to cykl spotkań organizowanych przez Koło Naukowe GHOST (Group of Horribly Optimistic STatisticians) działające przy Wydziale Informatyki i Telekomunikacji Politechniki Poznańskiej.</p>
+				<a href="#about_a" id="about_button">Dowiedz się więcej</a>
+			</div>
+			<div class="module-card">
+				<h3>Moduł 1</h3>
+				<p>Wprowadzenie do sztucznej inteligencji</p>
+			</div>
+			<div class="module-card">
+				<h3>Moduł 2</h3>
+				<p>Uczenie maszynowe — czym jest i jak działa?</p>
+			</div>
+			<div class="module-card">
+				<h3>Moduł 3</h3>
+				<p>Dane – kluczowy element w uczeniu maszynowym</p>
+			</div>
+			<div class="module-card">
+				<h3>Moduł 4</h3>
+				<p>Klasyfikacja — podstawowy problem w ML</p>
+			</div>
+			<div class="module-card">
+				<h3>Moduł 5</h3>
+				<p>Regresja – prognozowanie liczbowe</p>
+			</div>
+		</section>
+		<a id="about_a" class="a_href"></a>
+		<section id="about" class="about" , markdown>
+			<h2>O GHOST Academy</h2>
+			<p>GHOST Academy to cykl spotkań organizowanych przez Koło Naukowe GHOST (Group of Horribly Optimistic
+				STatisticians) działające przy Wydziale Informatyki i Telekomunikacji Politechniki Poznańskiej. Celem
+				programu jest wprowadzenie uczniów szkół średnich w fascynujący świat sztucznej inteligencji oraz pokazanie
+				praktycznych zastosowań tych technologii z wykorzystaniem języka programowania Python.</p>
+		</section>
+		<section id="details" class="details">
+			<h3><strong>Terminy i struktura zajęć</strong></h3>
+			<strong>Termin:</strong>&nbsp;luty &ndash; maj 2025 </br>
+			<strong>Godzina:</strong>&nbsp;godziny popołudniowe w dzień roboczy </br>
+			<strong>Forma:</strong>&nbsp;zajęcia hybrydowe (stacjonarne i online) </br>
+			<h3>Każdy z pięciu moduł&oacute;w tematycznych obejmuje trzy spotkania:</h3>
+			<ol class="details-list">
+				<li><strong>Spotkanie stacjonarne</strong>&nbsp;w Centrum Wykładowym Politechniki Poznańskiej &ndash; wprowadzenie teoretyczne
+					w formie przystępnego wykładu prowadzonego przez student&oacute;w.</li>
+				<li><strong>Warsztaty online</strong>&nbsp;&ndash; praktyczne zajęcia z realizacją projektu w środowisku
+					Google Colab.</li>
+				<li><strong>Konsultacje online</strong>&nbsp;&ndash; sesja pytań i odpowiedzi oraz wyjaśnianie ewentualnych
+					wątpliwości związanych z tematyką modułu.</li>
+			</ol>
+		</section>
+		<a id="contact_a" class="a_href"></a>
+		<section id="contact" class="contact">
+			<h2>Kontakt</h2>
+			<p>Email: ghost@put.poznan.pl </p>
+			<p>Bądź na bieżąco: <a
+				href="https://ghost.put.poznan.pl/?fbclid=IwY2xjawGxDVxleHRuA2FlbQIxMAABHQBBt32wwu0rttGqZ8OjLK2QAraK5fHRH6HgvvfVS_H52EKf-vs1vCXLmQ_aem_L6GCW5Wm3xvaJYUcI2rAcw">Strona
+				internetowa GHOST</a>
+				<a href="https://www.facebook.com/pp.ghost">Facebook</a>
+				<a href="https://www.linkedin.com/company/ghost-put/">LinkedIn</a>
+			</p>
+			<p><a href="https://cat.put.poznan.pl">Wydział Informatyki i Telekomunikacji</a></p>
+			<p>Adres: ul. Piotrowo 3, 60-965 Poznań</p>
 
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #f7f7f7;
-            padding: 10px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #c01c08;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #e65e4c;
-        }
-
-        #hero {
-            background-color: #c82714;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden
-        }
-
-        #banner-image {
-            height: auto; 
-            width: auto; 
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .modules {
-            padding: 40px 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            background: #f7f7f7;
-        }
-
-        .module-card {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            flex: 0 1 calc(30% - 20px);
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .module-card h3 {
-            color: #cc0000;
-            font-size: 1.2rem;
-        }
-
-        .module-card p {
-            font-size: 0.9rem;
-            color: #555;
-        }
-
-        .module-card a {
-            color: #c01c08;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .module-card a:hover {
-            color: #ff4d4d;
-        }
-
-        .about,
-        .contact {
-            padding: 20px;
-            text-align: center;
-
-        }
-
-        .about p {
-            text-align: left;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-
-        .details {
-            text-align: center;
-        }
-
-        .details-list {
-            text-align: left;
-            margin: 0 auto;
-            max-width: 600px;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: #c01c08;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            color: #ffffff;
-        }
-
-        @media (max-width: 768px) {
-            .module-card {
-                flex: 0 1 calc(100% - 40px);
-            }
-
-            .hero h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>GHOST Academy</h1>
-        <p>Wejdź z nami w świat AI!</p>
-    </header>
-    <nav>
-        <a href="#hero">Home</a>
-        <a href="#modules">Moduły</a>
-        <a href="#about">O nas</a>
-        <a href="#contact">Kontakt</a>
-    </nav>
-    <div id="hero">
-        <img src="resources/banner.png" , alt="Friendly ghost standing by a whiteboard" , id="banner-image">
-    </div>
-    <section id="modules" class="modules">
-        <div class="module-card">
-            <h3>Moduł 1</h3>
-            <p>Wprowadzenie do sztucznej inteligencji</p>
-        </div>
-        <div class="module-card">
-            <h3>Moduł 2</h3>
-            <p>Uczenie maszynowe — czym jest i jak działa?</p>
-        </div>
-        <div class="module-card">
-            <h3>Moduł 3</h3>
-            <p>Dane – kluczowy element w uczeniu maszynowym</p>
-        </div>
-        <div class="module-card">
-            <h3>Moduł 4</h3>
-            <p>Klasyfikacja — podstawowy problem w ML</p>
-        </div>
-        <div class="module-card">
-            <h3>Moduł 5</h3>
-            <p>Regresja – prognozowanie liczbowe</p>
-        </div>
-    </section>
-    <section id="about" class="about" , markdown>
-        <h2>O GHOST Academy</h2>
-        <p>GHOST Academy to cykl spotkań organizowanych przez Koło Naukowe GHOST (Group of Horribly Optimistic
-            STatisticians) działające przy Wydziale Informatyki i Telekomunikacji Politechniki Poznańskiej. Celem
-            programu jest wprowadzenie uczniów szkół średnich w fascynujący świat sztucznej inteligencji oraz pokazanie
-            praktycznych zastosowań tych technologii z wykorzystaniem języka programowania Python.</p>
-    </section>
-    <section id="details" class="details">
-        <h3><strong>Terminy i struktura zajęć</strong></h3>
-        <strong>Termin:</strong>&nbsp;luty &ndash; maj 2025 </br>
-        <strong>Godzina:</strong>&nbsp;godziny popołudniowe w dzień roboczy </br>
-        <strong>Forma:</strong>&nbsp;zajęcia hybrydowe (stacjonarne i online) </br>
-        <h3>Każdy z pięciu moduł&oacute;w tematycznych obejmuje trzy spotkania:</h3>
-        <ol class="details-list">
-            <li><strong>Spotkanie stacjonarne</strong>&nbsp;w Centrum Wykładowym Politechniki Poznańskiej &ndash; wprowadzenie teoretyczne
-                w formie przystępnego wykładu prowadzonego przez student&oacute;w.</li>
-            <li><strong>Warsztaty online</strong>&nbsp;&ndash; praktyczne zajęcia z realizacją projektu w środowisku
-                Google Colab.</li>
-            <li><strong>Konsultacje online</strong>&nbsp;&ndash; sesja pytań i odpowiedzi oraz wyjaśnianie ewentualnych
-                wątpliwości związanych z tematyką modułu.</li>
-        </ol>
-    </section>
-    <section id="contact" class="contact">
-        <h2>Kontakt</h2>
-        <p>Email: ghost@put.poznan.pl </p>
-        <p>Bądź na bieżąco: <a
-                href="https://ghost.put.poznan.pl/?fbclid=IwY2xjawGxDVxleHRuA2FlbQIxMAABHQBBt32wwu0rttGqZ8OjLK2QAraK5fHRH6HgvvfVS_H52EKf-vs1vCXLmQ_aem_L6GCW5Wm3xvaJYUcI2rAcw">Strona
-                internetowa GHOST</a>
-            <a href="https://www.facebook.com/pp.ghost">Facebook</a>
-            <a href="https://www.linkedin.com/company/ghost-put/">LinkedIn</a>
-        </p>
-        <p><a href="https://cat.put.poznan.pl">Wydział Informatyki i Telekomunikacji</a></p>
-        <p>Adres: ul. Piotrowo 3, 60-965 Poznań</p>
-
-    </section>
-    <footer>
-        <p>&copy; 2024 Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej. Wszystkie prawa zastrzeżone | <a href="#contact">Kontakt</a></p>
-    </footer>
-</body>
+		</section>
+		<footer>
+			<p>&copy; 2024 Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej. Wszystkie prawa zastrzeżone | <a href="#contact">Kontakt</a></p>
+		</footer>
+	</body>
 
 </html>

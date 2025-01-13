@@ -1,0 +1,246 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: Calibri, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #110000;
+	line-height: 1.6;
+	color: #FFF;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: #110000;
+	height: 100px;
+	margin: 0;
+}
+
+nav a {
+	text-decoration: none;
+	color: #990000;
+	margin: 0 20px;
+	font-weight: bold;
+	font-size: 22px;
+	transition: color 0.2s ease-out;
+}
+
+nav a:hover {
+	color: white;
+}
+
+#main_page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+	align-items: center;
+	margin: 0px;
+}
+
+#head {
+	color: white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-bottom: 0px;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2.5rem;
+}
+
+.a_href {
+	position: relative;
+	bottom: 100px;
+}
+
+#banners {
+	display: flex;
+	flex-direction: row;
+	/* flex-grow: 3; */
+	justify-content: space-evenly;
+	padding: 0px;
+}
+
+#logo {
+	width: 65vw;
+	height: auto;
+	margin: 0px;
+}
+
+.banner_logo {
+	max-height: 80px;
+	width: auto;
+}
+
+#about_button {
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 18px;
+	margin-bottom: 30px;
+	background: #990000;
+	width: 200px;
+	text-align: center;
+	padding: 15px 20px;
+	border-radius: 20px;
+}
+
+#banner-image {
+	height: auto; 
+	width: auto; 
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.modules {
+	padding: 40px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 400px));
+	justify-content: center;
+}
+
+@property --myColor1 {
+	syntax: '<color>';
+	initial-value: rgba(155, 0, 0, 1.0);
+	inherits: false;
+}
+  
+@property --myColor2 {
+	syntax: '<color>';
+	initial-value: rgba(3, 3, 3, 1.0);
+	inherits: false;
+}
+
+@property --bg-angle {
+	inherits: false;
+	initial-value: 45deg;
+	syntax: "<angle>";
+}
+
+@keyframes spin {
+	to {
+		--bg-angle: 225deg;
+	}
+}
+
+
+.module-card {
+	animation: spin 3s infinite ease-in-out paused;
+	padding: 30px 20px;
+	margin: 20px;
+	height: 300px;
+	max-width: 400px;
+	text-align: center;
+	padding: 30px;
+	border-radius: 100px;
+	/* border-radius: 10px; */
+	box-shadow: 0.3em 0.3em 1em rgb(100 0 0 / 60%);
+	max-width: 250px;
+	color: white;
+	border:5px solid #0000;
+	border-radius:7px;
+	position: relative;
+	background:
+		linear-gradient(-10deg, rgba(3, 3, 3, 1.0), rgba(10, 10, 10, 1.0)) padding-box,
+		linear-gradient(var(--bg-angle), rgba(155, 0, 0, 1.0) 0%, rgba(10, 10, 10, 1.0) 30%, rgba(10, 10, 10, 1.0) 70%, rgba(155, 0, 0, 1.0) 100%) border-box;
+	transition: var(--bg-angle) 90deg 0.1s;
+}
+
+.module-card:hover {
+	animation-play-state: running;
+}
+
+.module-card h3 {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 900;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+
+.module-card p {
+	font-size: 1.0rem;
+	color: #888888;
+	font-weight: 700;
+	margin: 0;
+}
+
+.module-card p.description {
+	font-weight: 300;
+	text-align: left;
+	margin-bottom: 30px;
+}
+
+.module-card a {
+	color: #c01c08;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.module-card a:hover {
+	color: #ff4d4d;
+}
+
+.about,
+.contact {
+	padding: 20px;
+	text-align: center;
+
+}
+
+.about p {
+	text-align: left;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+.details {
+	text-align: center;
+}
+
+.details-list {
+	text-align: left;
+	margin: 0 auto;
+	max-width: 600px;
+}
+
+footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+footer a {
+	color: #c01c08;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.module-card {
+		flex: 0 1 calc(100% - 40px);
+	}
+
+	.hero h2 {
+		font-size: 2rem;
+	}
+}
+
