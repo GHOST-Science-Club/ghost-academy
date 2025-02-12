@@ -15,7 +15,7 @@ body {
 /* Logo Size Adjustments */
 #logo {
     width: 90%;
-    max-width: 500px; /* Prevents the logo from becoming too large on desktops */
+    max-width: 700px; /* Prevents the logo from becoming too large on desktops */
     height: auto;
     margin: 0px; /* Centers the logo */
 }
@@ -90,12 +90,12 @@ header h1 {
 	color: white;
 	text-decoration: none;
 	font-weight: 900;
-	font-size: 18px;
+	font-size: 16px;
 	margin-bottom: 30px;
 	background: #990000;
 	width: 200px;
 	text-align: center;
-	padding: 15px 20px;
+	padding: 8px 10px;
 	border-radius: 20px;
 }
 
@@ -116,7 +116,8 @@ header h1 {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-@media (min-width: 1200px) {
+
+@media (max-width: 2200px) {
     .modules {
         grid-template-columns: repeat(3, 1fr); /* Limits to 3 columns on larger screens */
     }
@@ -206,12 +207,12 @@ header h1 {
 * Center-align text in sections */
 .about, .details, .contact {
     text-align: center; /* Center-align text horizontally */
-    margin: 0 auto;
+    margin: auto;
 	max-width: 600px;
 }
 
 .about p {
-	text-align: left;
+	text-align: center;
 	margin: 0 auto;
 	max-width: 600px;
 }
