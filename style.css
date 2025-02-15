@@ -24,12 +24,6 @@ nav {
 	margin: 0;
 }
 
-.topnav.responsive a.icon {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
-
 nav a {
 	text-decoration: none;
 	color: #990000;
@@ -43,35 +37,7 @@ nav a:hover {
 	color: white;
 }
 
-.container {
-	display: inline-block;
-	cursor: pointer;
-}
-
-.bar1, .bar2, .bar3 {
-	width: 35px;
-	height: 5px;
-	background-color: white;
-	border-radius: 4px;
-	margin: 6px 0;
-	transition: 0.4s;
-	display: none;
-}
-
-.change .bar1 {
-	transform: translate(0, 11px) rotate(-45deg);
-}
-	/* Rotate first bar */
-  
-  /* Fade out the second bar */
-  
-.change .bar2 {opacity: 0;}
-  /* Rotate last bar */
-.change .bar3 {
-	transform: translate(0, -11px) rotate(45deg);
-}
-  
-  #main_page {
+#main_page {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -103,7 +69,6 @@ header h1 {
 #banners {
 	display: flex;
 	flex-direction: row;
-	/* flex-grow: 3; */
 	justify-content: space-evenly;
 	padding: 0px;
 }
@@ -147,17 +112,6 @@ header h1 {
 	justify-content: center;
 }
 
-@property --myColor1 {
-	syntax: '<color>';
-	initial-value: rgba(155, 0, 0, 1.0);
-	inherits: false;
-}
-  
-@property --myColor2 {
-	syntax: '<color>';
-	initial-value: rgba(3, 3, 3, 1.0);
-	inherits: false;
-}
 
 @property --bg-angle {
 	inherits: false;
@@ -181,7 +135,6 @@ header h1 {
 	text-align: center;
 	padding: 30px;
 	border-radius: 100px;
-	/* border-radius: 10px; */
 	box-shadow: 0.3em 0.3em 1em rgb(100 0 0 / 60%);
 	max-width: 250px;
 	color: white;
@@ -279,7 +232,6 @@ footer a:hover {
 }
 
 @media (max-width: 1024px) {
-
 	.modules {
 		padding: 40px 20px;
 		display: grid;
@@ -344,28 +296,6 @@ footer a:hover {
 		width: auto;
 		padding: 10px;
 	}
-
-	.menu_icon {
-		align-content: center;
-		text-align: right;
-		margin-right: 20px;
-	}
-	
-	.menu {
-		display: grid;
-		align-content: center;
-		text-align: right;
-	}
-	
-	.menu_list {
-		display: none;
-	}
-
-
-	.bar1, .bar2, .bar3 {
-		display: block;
-	}
-	
 }
 
 
