@@ -1,51 +1,77 @@
-/* General adjustments for responsiveness */
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-    font-family: Calibri, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #110000;
-    line-height: 1.6;
-    color: #FFF;
+	font-family: Calibri, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #110000;
+	line-height: 1.6;
+	color: #FFF;
 }
 
-/* Logo Size Adjustments */
-#logo {
-    width: 90%;
-    max-width: 700px; /* Prevents the logo from becoming too large on desktops */
-    height: auto;
-    margin: 0px; /* Centers the logo */
-}
-
-/* Navigation */
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: #110000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	background: #110000;
+	height: 100px;
+	margin: 0;
+}
+
+.topnav.responsive a.icon {
+	position: absolute;
+	right: 10px;
+	top: 10px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #990000;
-    margin: 0 15px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.2s ease-out;
+	text-decoration: none;
+	color: #990000;
+	margin: 0 20px;
+	font-weight: bold;
+	font-size: 22px;
+	transition: color 0.2s ease-out;
 }
 
 nav a:hover {
-    color: white;
+	color: white;
 }
 
-#main_page {
+.container {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: white;
+	border-radius: 4px;
+	margin: 6px 0;
+	transition: 0.4s;
+	display: none;
+}
+
+.change .bar1 {
+	transform: translate(0, 11px) rotate(-45deg);
+}
+	/* Rotate first bar */
+  
+  /* Fade out the second bar */
+  
+.change .bar2 {opacity: 0;}
+  /* Rotate last bar */
+.change .bar3 {
+	transform: translate(0, -11px) rotate(45deg);
+}
+  
+  #main_page {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -75,27 +101,34 @@ header h1 {
 }
 
 #banners {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 10px;
+	display: flex;
+	flex-direction: row;
+	/* flex-grow: 3; */
+	justify-content: space-evenly;
+	padding: 0px;
+}
+
+#logo {
+	width: 65vw;
+	height: auto;
+	margin: 0px;
 }
 
 .banner_logo {
-    max-height: 50px;
-    width: auto;
-    margin: 5px;
+	max-height: 80px;
+	width: auto;
 }
+
 #about_button {
 	color: white;
 	text-decoration: none;
 	font-weight: 900;
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 30px;
 	background: #990000;
 	width: 200px;
 	text-align: center;
-	padding: 8px 10px;
+	padding: 15px 20px;
 	border-radius: 20px;
 }
 
@@ -107,20 +140,11 @@ header h1 {
 	margin-right: auto;
 }
 
-/* Modules section */
 .modules {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-@media (max-width: 2200px) {
-    .modules {
-        grid-template-columns: repeat(3, 1fr); /* Limits to 3 columns on larger screens */
-    }
+	padding: 40px 20px;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(200px, 400px));
+	justify-content: center;
 }
 
 @property --myColor1 {
@@ -146,18 +170,28 @@ header h1 {
 		--bg-angle: 225deg;
 	}
 }
+
+
 .module-card {
 	animation: spin 3s infinite ease-in-out paused;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-    border-radius: 25px;
-    box-shadow: 0.3em 0.3em 1em rgb(100 0 0 / 60%);
-    color: white;
-    background:
-        linear-gradient(-10deg, rgba(3, 3, 3, 1.0), rgba(10, 10, 10, 1.0)) padding-box,
-        linear-gradient(var(--bg-angle), rgba(155, 0, 0, 1.0) 0%, rgba(10, 10, 10, 1.0) 30%, rgba(10, 10, 10, 1.0) 70%, rgba(155, 0, 0, 1.0) 100%) border-box;
-    transition: var(--bg-angle) 90deg 0.1s;
+	padding: 30px 20px;
+	margin: 20px;
+	height: 300px;
+	max-width: 400px;
+	text-align: center;
+	padding: 30px;
+	border-radius: 100px;
+	/* border-radius: 10px; */
+	box-shadow: 0.3em 0.3em 1em rgb(100 0 0 / 60%);
+	max-width: 250px;
+	color: white;
+	border:5px solid #0000;
+	border-radius:7px;
+	position: relative;
+	background:
+		linear-gradient(-10deg, rgba(3, 3, 3, 1.0), rgba(10, 10, 10, 1.0)) padding-box,
+		linear-gradient(var(--bg-angle), rgba(155, 0, 0, 1.0) 0%, rgba(10, 10, 10, 1.0) 30%, rgba(10, 10, 10, 1.0) 70%, rgba(155, 0, 0, 1.0) 100%) border-box;
+	transition: var(--bg-angle) 90deg 0.1s;
 }
 
 .module-card:hover {
@@ -165,72 +199,49 @@ header h1 {
 }
 
 .module-card h3 {
-    font-size: 1.1rem;
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 900;
+	margin: 0px;
+	margin-bottom: 20px;
 }
 
 .module-card p {
-    font-size: 0.9rem;
-    color: #888888;
+	font-size: 1.0rem;
+	color: #888888;
+	font-weight: 700;
+	margin: 0;
 }
 
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    nav a {
-        font-size: 16px;
-        margin: 0 10px;
-    }
-
-    #logo {
-        width: 90vw;
-    }
-
-    #banners {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .modules {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .module-card {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-	.module-card a:hover {
-		color: #ff4d4d;
-	}
+.module-card p.description {
+	font-weight: 300;
+	text-align: left;
+	margin-bottom: 30px;
 }
 
-* Center-align text in sections */
-.about, .details, .contact {
-    text-align: center; /* Center-align text horizontally */
-    margin: auto;
-	max-width: 600px;
+.module-card a {
+	color: #c01c08;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.module-card a:hover {
+	color: #ff4d4d;
+}
+
+.about,
+.contact {
+	padding: 20px;
+	text-align: center;
+
 }
 
 .about p {
-	text-align: center;
+	text-align: left;
 	margin: 0 auto;
 	max-width: 600px;
 }
 
-.about h2 {
-	text-align: center;
-}
-
-
-.contact p {
-	text-align: center;
-	margin: 0 auto;
-	max-width: 600px;
-}
-
-.contact h2 {
-	text-align: center;
-}
 .details {
 	text-align: center;
 }
@@ -239,6 +250,16 @@ header h1 {
 	text-align: left;
 	margin: 0 auto;
 	max-width: 600px;
+}
+
+.link {
+	color: #990000;
+	font-weight: 900;
+}
+
+#link_faculty {
+	font-weight: 900;
+	color: #bec18f;
 }
 
 footer {
@@ -257,13 +278,94 @@ footer a:hover {
 	color: #ffffff;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
-    #logo {
-        width: 90%; /* Ensures the logo is not too wide on smaller screens */
-    }
+@media (max-width: 1024px) {
 
-    .about, .details, .contact {
-        max-width: 90%; /* Makes the content fit better on small screens */
-    }
+	.modules {
+		padding: 40px 20px;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(200px, 400px));
+		justify-content: center;
+	}
+
+    .banner_logo {
+		max-height: 80px;
+		height: 50px;
+		width: auto;
+		padding: 10px;
+	}
+
+	.module-card {
+		flex: 0 1 calc(100% - 40px);
+	}
+
+	.hero h2 {
+		font-size: 2rem;
+	}
 }
+
+@media (max-width: 768px) {
+    nav a {
+        font-size: 17px;
+        margin: 0 10px;
+    }
+	.modules {
+		padding: 40px 20px;
+		display: grid;
+		grid-template-columns: repeat(1, minmax(200px, 400px));
+		justify-content: center;
+	}
+	.module-card {
+		flex: 0 1 calc(100% - 40px);
+	}
+
+	.hero h2 {
+		font-size: 2rem;
+	}
+
+	.details {
+		padding: 50px;
+	}
+
+	.about {
+		padding: 50px;
+	}
+
+	#banners {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0px;
+	}
+
+	.banner_logo {
+		max-height: 80px;
+		height: 50px;
+		width: auto;
+		padding: 10px;
+	}
+
+	.menu_icon {
+		align-content: center;
+		text-align: right;
+		margin-right: 20px;
+	}
+	
+	.menu {
+		display: grid;
+		align-content: center;
+		text-align: right;
+	}
+	
+	.menu_list {
+		display: none;
+	}
+
+
+	.bar1, .bar2, .bar3 {
+		display: block;
+	}
+	
+}
+
+
