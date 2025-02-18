@@ -89,12 +89,35 @@ header h1 {
 	text-decoration: none;
 	font-weight: 900;
 	font-size: 18px;
-	margin-bottom: 30px;
-	background: #990000;
+	margin-bottom: 10px;
+	background: #99000055;
 	width: 200px;
 	text-align: center;
 	padding: 15px 20px;
 	border-radius: 20px;
+	transition: background 0.2s ease-out;
+}
+
+#about_button:hover {
+	background: #990000;
+}
+
+#about_button_2 {
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 18px;
+	margin-bottom: 30px;
+	background: #99000055;
+	width: 200px;
+	text-align: center;
+	padding: 15px 20px;
+	border-radius: 20px;
+	transition: background 0.2s ease-out;
+}
+
+#about_button_2:hover {
+	background: #990000;
 }
 
 #banner-image {
@@ -127,6 +150,8 @@ header h1 {
 
 
 .module-card {
+	display: flex;
+	flex-direction: column;
 	animation: spin 3s infinite ease-in-out paused;
 	padding: 30px 20px;
 	margin: 20px;
