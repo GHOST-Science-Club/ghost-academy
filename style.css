@@ -203,10 +203,17 @@ header h1 {
     margin-bottom: 30px;
 }
 
+.module-card p.description-with-links {
+    font-weight: 300;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 .module-card a {
-    color: #c01c08;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .module-card a:hover {
