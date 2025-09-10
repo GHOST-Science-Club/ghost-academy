@@ -7,20 +7,30 @@
 		<title>GHOST Academy</title>
 		<link rel="icon" type="x-icon" href="./resources/favicon_32.ico"/>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 
 	<body>
 		<header>
-				
-			<nav>
-				<a href="#main_page_a"><img src="resources/ghost_academy_logo.png" , alt="Logo ghost academy", id="logo_GA"></a>
-				<img class="banner_logo", src="resources/PP_znak_WIiT_RGB.png" , alt="Logo Wydziału Informatyki i Telekomunikacji">
-				<img class="banner_logo", src="resources/PP_logotyp_RGB.png" , alt="Logo Politechniki Poznańskiej" >
-				<img class="banner_logo", src="resources/ghost_logo_red_white.png" , alt="Logo koła naukowego GHOST">
+			<div style="display: flex; align-items:center;">
+			<a href="#main_page_a">
+				<img src="resources\ga_logo_podluzne_bez_tla.png" , alt="Logo ghost academy", id="logo_GA">
+			</a>
+			<img class="banner_logo", src="resources/ghost_logo_red_white.png" , alt="Logo koła naukowego GHOST">
+			<img class="banner_logo", src="resources/PP_znak_WIiT_RGB.png" , alt="Logo Wydziału Informatyki i Telekomunikacji">
+			<img class="banner_logo", src="resources/PP_logotyp_RGB.png" , alt="Logo Politechniki Poznańskiej" >
+			</div>
+			<nav id="navbar">
 				<a href="#modules_a">Moduły</a>
 				<a href="#about_a">O nas</a>
 				<a href="#contact_a">Kontakt</a>
 				<a href="regulamin.pdf">Regulamin</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 			</nav>
 		</header>
 		
@@ -113,6 +123,14 @@
 		<footer>
 			<p>&copy; 2025 Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej. Wszystkie prawa zastrzeżone | <a href="#contact">Regulamin i polityka prywatności</a></p>
 		</footer>
+
+
+		<script>
+			function toggleMenu() {
+			const nav = document.getElementById("navbar");
+			nav.classList.toggle("responsive");
+			}
+		</script>
 	</body>
 
 </html>
