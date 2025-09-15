@@ -447,22 +447,31 @@ header {
     height: 100%;
 }
 
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    transition: transform 0.3s ease;
-}
-
 .contact-item:hover {
     transform: translateX(5px);
 }
 
-.contact-item i {
-    font-size: 28px;
-    color: #990000;
-    margin-top: 5px;
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
 }
+
+.contact-item i {
+    width: 30px;           
+    text-align: center;    
+    margin-right: 15px;    
+    font-size: 28px;      
+    color: #990000;        
+    padding-top: 3px;    
+}
+
+.contact-item div {
+    flex: 1;
+}
+
+
 
 .contact-item h3 {
     font-size: 18px;
