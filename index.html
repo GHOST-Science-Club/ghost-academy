@@ -11,126 +11,226 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 	</head>
 
 	<body>
-		<header>
-			<div style="display: flex; align-items:center;">
-			<a href="#main_page_a">
-				<img src="resources\ga_logo_podluzne_bez_tla.png" , alt="Logo ghost academy", id="logo_GA">
-			</a>
-			<img class="banner_logo", src="resources/ghost_logo_red_white.png" , alt="Logo koła naukowego GHOST">
-			<img class="banner_logo", src="resources/PP_znak_WIiT_RGB.png" , alt="Logo Wydziału Informatyki i Telekomunikacji">
-			<img class="banner_logo", src="resources/PP_logotyp_RGB.png" , alt="Logo Politechniki Poznańskiej" >
-			</div>
-			<nav id="navbar">
-				<a href="#modules_a">Moduły</a>
-				<a href="#about_a">O nas</a>
-				<a href="#contact_a">Kontakt</a>
-				<a href="regulamin.pdf">Regulamin</a>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars"></i>
-				</a>
-			</nav>
-		</header>
 		
-		<a id="main_page_a" class="a_href"></a>
-		<div id="main_page">
-			
-		</div>
-		<div id="banners">
-			
-		</div>
-		<a id="modules_a" class="a_href"></a>
-		<section id="modules" class="modules">
-			<div class="module-card">
-				<h3>O GHOST Academy</h3>
-				<p class='description'>GHOST Academy to kurs wprowadzający do sztucznej inteligencji dla uczniów szkół średnich. Dołącz do nas!</p>
-				<a href="#about_a" id="about_button">Dowiedz się więcej</a>
+
+		<header>
+			<div id="baners">
+				<a href="#main_page_a" class="logo-link">
+				<img src="resources/ga_logo_podluzne_bez_tla.png" alt="Logo ghost academy" id="logo_GA">
+				</a>
+				<div class="secondary-logos">
+					<img class="banner_logo" src="resources/ghost_logo_red_white.png" alt="Logo GHOST">
+					<img class="banner_logo" src="resources/PP_znak_WIiT_RGB.png" alt="Logo Wydziału Informatyki i Telekomunikacji">
+					<img class="banner_logo pp_logo_desktop" src="resources/PP_logotyp_WHITE.png" alt="Logo Politechniki Poznańskiej">
+					<img class="banner_logo pp_logo_mobile" src="resources/PP_znak_konturowy_WHITE.png" alt="Logo Politechniki Poznańskiej">
+				</div>
+				<a href="javascript:void(0);" class="hamburger-icon" onclick="toggleNav()">
+				<i class="fa-solid fa-bars"></i>
+				</a>
 			</div>
-			<div class="module-card">
-                <h3>Moduł 1: Wprowadzenie do sztucznej inteligencji</h3>
-                <p class='description-with-links'>Poznaj podstawowe pojęcia i koncepcje związane ze sztuczną inteligencją, jej historię oraz obszary zastosowania. Dowiesz się, jak AI wpływa na nasze codzienne życie i jak zmienia świat technologii.</p>
-				<a href="https://youtu.be/X1L1mmyJYEo?si=NOdocjANQ8Q8MSTK">Nagranie</a>
-				<a href="https://colab.research.google.com/drive/1PnOQL-J4TAR7u5URAGwUGGKS5Hh1zGRK?usp=sharing">Warsztaty</a>
-            </div>
-            <div class="module-card">
-                <h3>Moduł 2: Dane – kluczowy element w uczeniu maszynowym</h3>
-                <p class='description-with-links'>Zrozum znaczenie danych w procesie uczenia maszynowego. Nauczysz się, jak gromadzić, przygotowywać i analizować dane, aby mogły zostać wykorzystane w projektach AI.</p>
-				<a href="https://youtu.be/Owx_bppOPiQ">Nagranie</a>
-				<a href="https://drive.google.com/file/d/10-FqSMxzz3hddXw2hcR8JzHaQhvd_EUQ/view?usp=sharing">Warsztaty</a>
-            </div>
-            <div class="module-card">
-                <h3>Moduł 3: Regresja – prognozowanie liczbowe</h3>
-                <p class='description-with-links'>Poznaj metody prognozowania liczb w oparciu o dane historyczne. Moduł skupia się na technikach regresji i ich praktycznym zastosowaniu w różnych dziedzinach.</p>
-				<a href="https://youtu.be/zUwwE74R4_4?si=M-mFVCC1UiOzYNOY">Nagranie</a>
-				<a href="https://colab.research.google.com/drive/1i1vNmlYUsMYdZ5fcRCB8HckZsvLsi9l4?usp=sharing">Warsztaty</a>
-            </div>
-			<div class="module-card">
-                <h3>Moduł 4: Klasyfikacja — podstawowy problem w ML</h3>
-                <p class='description-with-links'>Dowiedz się, jak klasyfikować dane i podejmować decyzje na podstawie zebranych informacji. Omówimy popularne algorytmy klasyfikacji i ich zastosowanie w praktyce.</p>
-				<a href="https://youtu.be/1Jn9gW8QNy8?si=CY34g_ARehBhvicX">Nagranie</a>
-				<a href="https://colab.research.google.com/drive/1xW0gYUTSKSegWgK7Ag0vZ50v58ds0Ks_?usp=sharing">Warsztaty</a>
-            </div>
-            <div class="module-card">
-                <h3>Moduł 5: Sieci neuronowe</h3>
-                <p class='description-with-links'>Odkryj fascynujący świat sieci neuronowych, które stanowią podstawę nowoczesnych systemów AI. Nauczysz się, jak działają i jak są wykorzystywane do rozwiązywania skomplikowanych problemów.</p>
-				<a href="https://colab.research.google.com/drive/1gLO2hOsZFo47_uxq3NIBln9nFN2eVyd_?usp=sharing">Warsztaty</a>
-            </div>
-		</section>
+		</header>
+		<!-- Side panel -->
+		<div id="sidePanel" class="side-panel">
+			<a href="#about_a">O nas</a>
+			<a href="#modules_a">Moduły</a>
+			<a href="#contact_a">Kontakt</a>
+			<a href="regulamin.pdf">Regulamin</a>
+		</div>
+
+
+		<div id="main_page">
+			<a id="main_page_a" class="a_href"></a>
+			<div id="main_image_container">
+				<img src="resources/ga2.jpeg" alt="Zdjecie uczestnikow poprzedniej edycji" id="main_image_1">
+				<div class="image-overlay">
+					<h2>Dołącz do nas!</h2>
+				</div>
+				<div class="scroll-indicator">
+					<a href="#about_a">
+						<i class="fa-solid fa-chevron-down"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
 		<a id="about_a" class="a_href"></a>
 		<section id="about" class="about" , markdown>
 			<h2>O GHOST Academy</h2>
 			<p>GHOST Academy to kurs wprowadzający do sztucznej inteligencji organizowany przez
-				Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej, skierowany do uczniów szkół średnich z Poznania i okolic.
+				Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej, skierowany do uczniów szkół średnich.
 				Celem programu jest wprowadzenie uczniów w fascynujący świat sztucznej inteligencji oraz zaprezentowanie
 				praktycznych zastosowań tych technologii z wykorzystaniem języka programowania Python.</p>
-			<a href="https://forms.gle/p5ktMqR9DR2Wu7nh6" id="about_button_2" target="_blank" rel="noopener noreferrer">Zapisz się</a>
+			<a href="https://forms.gle/c1jaXojgHtk11opH9" id="about_button_2" target="_blank" rel="noopener noreferrer">Zapisz się</a>
 		</section>
+
+			<hr class="section-divider">
 		<section id="details" class="details">
 			<h3><strong>Terminy i struktura zajęć</strong></h3>
-			<strong>Termin:</strong>&nbsp;marzec &ndash; maj 2025 </br>
-            <strong>Start:</strong>&nbsp;12 marca 2025</br>
-			<strong>Godzina:</strong>&nbsp;Środa 17:00-18:00 </br>
-			<strong>Forma:</strong>&nbsp;zajęcia hybrydowe (stacjonarne i online) </br>
-			<h3>Każdy z pięciu moduł&oacute;w tematycznych obejmuje trzy spotkania:</h3>
+			<div class="details-info">
+				<strong>Termin:</strong>&nbsp;październik &ndash; luty 2025/26 </br>
+				<strong>Start:</strong>&nbsp;8 października 2025</br>
+				<strong>Godzina:</strong>&nbsp;Środa 17:00-18:00 </br>
+				<strong>Forma:</strong>&nbsp;zajęcia hybrydowe (stacjonarne i online) </br>
+			</div>
+			<h3>Każdy z ośmiu moduł&oacute;w tematycznych obejmuje spotkania:</h3>
 			<ol class="details-list">
 				<li><strong>Spotkanie stacjonarne</strong>&nbsp;w Centrum Wykładowym Politechniki Poznańskiej &ndash; wprowadzenie teoretyczne
 					w formie przystępnego wykładu prowadzonego przez student&oacute;w.</li>
-				<li><strong>Warsztaty online</strong>&nbsp;&ndash; praktyczne zajęcia z realizacją projektu w środowisku
+				<li><strong>Warsztaty online lub stacjonarne</strong>&nbsp;&ndash; praktyczne zajęcia z realizacją projektu w środowisku
 					Google Colab.</li>
-				<li><strong>Konsultacje online</strong>&nbsp;&ndash; sesja pytań i odpowiedzi oraz wyjaśnianie ewentualnych
-					wątpliwości związanych z tematyką modułu.</li>
+				<li><strong>Konsultacje online</strong>&nbsp;&ndash; opcjonalne spotkania z wykładającymi, gdzie można dowiedzieć się więcej o teorii oraz zadać dodatkowe pytania.</li>
 			</ol>
 		</section>
+		
+		<hr class="section-divider">
+		<a id="modules_a" class="a_href"></a>
+		<section id="modules" class="modules">
+			<!-- <div class="module-card">
+				<h3>O GHOST Academy</h3>
+				<p class='description'>GHOST Academy to kurs wprowadzający do sztucznej inteligencji dla uczniów szkół średnich. Dołącz do nas!</p>
+				<a href="#about_a" id="about_button">Dowiedz się więcej</a>
+			</div> -->
+			<div class="module-card">
+                <h3>Moduł 1: Wprowadzenie do sztucznej inteligencji</h3>
+                <p class='description-with-links'>Poznaj podstawowe pojęcia i koncepcje związane ze sztuczną inteligencją, jej historię oraz obszary zastosowania. Dowiesz się, jak AI wpływa na nasze codzienne życie i jak zmienia świat technologii.</p>
+				<!-- <a href="link">Nagranie</a>
+				<a href="link">Warsztaty</a> -->
+            </div>
+            <div class="module-card">
+                <h3>Moduł 2: Dane i wizualizacja danych – kluczowy element w uczeniu maszynowym</h3>
+                <p class='description-with-links'>Zrozum znaczenie danych w procesie uczenia maszynowego. Nauczysz się, jak gromadzić, przygotowywać i analizować dane, aby mogły zostać wykorzystane w projektach AI.</p>
+				<!-- <a href="link">Nagranie</a>
+				<a href="link">Warsztaty</a> -->
+            </div>
+            <div class="module-card">
+                <h3>Moduł 3: Klasyfikacja – podstawowy problem w ML</h3>
+                <p class='description-with-links'>Dowiedz się, jak klasyfikować dane i podejmować decyzje na podstawie zebranych informacji. Omówimy popularne algorytmy klasyfikacji i ich zastosowanie w praktyce.</p>
+				<!-- <a href="link">Nagranie</a>
+				<a href="link">Warsztaty</a> -->
+            </div>
+			<div class="module-card">
+                <h3>Moduł 4: Regresja — prognozowanie liczbowe</h3>
+                <p class='description-with-links'>Poznaj metody prognozowania liczb w oparciu o dane historyczne. Moduł skupia się na technikach regresji i ich praktycznym zastosowaniu w różnych dziedzinach.</p>
+				<!-- <a href="link">Nagranie</a>
+				<a href="link">Warsztaty</a> -->
+            </div>
+            <div class="module-card">
+                <h3>Moduł 5: Uczenie głębokie - sieci neuronowe</h3>
+                <p class='description-with-links'>Odkryj fascynujący świat sieci neuronowych, które stanowią podstawę nowoczesnych systemów AI. Nauczysz się, jak działają i jak są wykorzystywane do rozwiązywania skomplikowanych problemów.</p>
+				<!-- <a href="link">Warsztaty</a> -->
+            </div>
+			<div class="module-card">
+                <h3>Moduł 6: Wizja komputerowa</h3>
+                <p class='description-with-links'>Poznaj świat wizji komputerowej, która pozwala maszynom "widzieć" i interpretować obrazy. Dowiesz się, jak działają algorytmy rozpoznawania obiektów, twarzy oraz jak tworzyć aplikacje wykorzystujące analizę obrazu.</p>
+				<!-- <a href="link">Warsztaty</a> -->
+            </div>
+			<div class="module-card">
+                <h3>Moduł 7: Duże modele językowe LLM</h3>
+                <p class='description-with-links'>Zgłęb tajniki dużych modeli językowych (LLM), które zrewolucjonizowały świat AI. Poznasz zasady działania modeli takich jak GPT oraz ich zastosowania w generowaniu tekstu, tłumaczeniu i konwersacji z człowiekiem.</p>
+				<!-- <a href="link">Warsztaty</a> -->
+            </div>
+			<div class="module-card">
+                <h3>Moduł 8: Prompt engeineering</h3>
+                <p class='description-with-links'>Odkryj sztukę efektywnej komunikacji z modelami AI poprzez prompt engineering. Nauczysz się formułować zapytania, które pozwolą uzyskać najlepsze rezultaty z modeli językowych i generatywnych.</p>
+				<!-- <a href="link">Warsztaty</a> -->
+            </div>
+			<div class="module-card">
+                <h3>Moduł 9: AI i społeczeństwo</h3>
+                <p class='description-with-links'>Etyka, regulacje, odpowiedzialność - zgłęb społeczne aspekty sztucznej inteligencji. Zastanowimy się nad etycznymi dylematami, prawnymi regulacjami oraz odpowiedzialnym rozwojem technologii AI w nowoczesnym społeczeństwie.</p>
+				<!-- <a href="link">Warsztaty</a> -->
+            </div>
+		</section>
+		
+		<a id="zapisz-sie_a" class="a_href"></a>
+		<section id="zapisz-sie" class="zapisz-sie">
+			<a href="https://forms.gle/c1jaXojgHtk11opH9" id="about_button_2" target="_blank" rel="noopener noreferrer">Zapisz się</a>
+		</section>
+
+		<hr class="section-divider">
 		<a id="contact_a" class="a_href"></a>
 		<section id="contact" class="contact">
 			<h2>Kontakt</h2>
-			<p>Email: ghost@put.poznan.pl </p>
-			<div>Bądź na bieżąco:
-				<a class="link"
-				href="https://ghost.put.poznan.pl/?fbclid=IwY2xjawGxDVxleHRuA2FlbQIxMAABHQBBt32wwu0rttGqZ8OjLK2QAraK5fHRH6HgvvfVS_H52EKf-vs1vCXLmQ_aem_L6GCW5Wm3xvaJYUcI2rAcw">Strona
-				internetowa GHOST</a>
-				,
-				<a class="link" href="https://www.facebook.com/pp.ghost">Facebook</a>
-				,
-				<a class="link" href="https://www.linkedin.com/company/ghost-put/">LinkedIn</a>
+			<div class="contact-container">
+				<div class="contact-info">
+					<div class="contact-item">
+						<i class="fa-solid fa-envelope"></i>
+						<div>
+							<h3>Email</h3>
+							<p>ghost@put.poznan.pl</p>
+						</div>
+					</div>
+					
+					<div class="contact-item">
+						<i class="fa-solid fa-location-dot"></i>
+						<div>
+							<h3>Adres</h3>
+							<p>Wydział Informatyki i Telekomunikacji</p>
+							<p>ul. Piotrowo 3, 60-965 Poznań</p>
+						</div>
+					</div>
+					
+					<div class="contact-item">
+						<i class="fa-solid fa-link"></i>
+						<div>
+							<h3>Bądź na bieżąco</h3>
+							<div class="social-links">
+								<a class="social-link" href="https://ghost.put.poznan.pl" target="_blank">
+									<i class="fa-solid fa-globe"></i> GHOST
+								</a>
+								<a class="social-link" href="https://www.facebook.com/pp.ghost" target="_blank">
+									<i class="fa-brands fa-facebook"></i> Facebook
+								</a>
+								<a class="social-link" href="https://www.linkedin.com/company/ghost-put/" target="_blank">
+									<i class="fa-brands fa-linkedin"></i> LinkedIn
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map-container">
+					<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2433.8012626469183!2d16.94901587657592!3d52.40305854206705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b3a1abcdf9d%3A0x7ac7d2da14c7e4a0!2sWydzia%C5%82%20Informatyki%20i%20Telekomunikacji%20PP!5e0!3m2!1spl!2spl!4v1694436444394!5m2!1spl!2spl" 
+						width="100%" 
+						height="100%" 
+						style="border:0;" 
+						allowfullscreen="" 
+						loading="lazy" 
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
 			</div>
-			<p><a id="link_faculty" href="https://cat.put.poznan.pl">Wydział Informatyki i Telekomunikacji</a></p>
-			<p>Adres: ul. Piotrowo 3, 60-965 Poznań</p>
-
 		</section>
+		
+		<hr class="subtle-divider">
 		<footer>
-			<p>&copy; 2025 Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej. Wszystkie prawa zastrzeżone | <a href="#contact">Regulamin i polityka prywatności</a></p>
+			<p>&copy; 2025 Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej. Wszystkie prawa zastrzeżone | <a href="regulamin.pdf">Regulamin i polityka prywatności</a></p>
 		</footer>
 
-
 		<script>
-			function toggleMenu() {
-			const nav = document.getElementById("navbar");
-			nav.classList.toggle("responsive");
+			function toggleNav() {
+			const panel = document.getElementById("sidePanel");
+			const body = document.body;
+			if (panel.style.width === "250px") {
+				panel.style.width = "0";
+				body.style.overflow = "auto"; // Enable scrolling again
+			} else {
+				panel.style.width = "250px";
+				if (window.innerWidth <= 768) { // Only for mobile devices
+					body.style.overflow = "hidden"; // Prevent background scrolling on mobile
+				}
+			}
 			}
 		</script>
+
+
+
 	</body>
 
 </html>
