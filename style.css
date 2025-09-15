@@ -2,6 +2,7 @@
 html {
     scroll-behavior: smooth;
     background-color: black;
+    font-size: 16px; /* Base font size */
 }
 
 body {
@@ -13,6 +14,54 @@ body {
     color: #fff;
     overflow-x: hidden;
     max-width: 100vw;
+}
+
+/* Common elements and utilities */
+.a_href {
+    position: relative;
+    bottom: 100px;
+}
+
+.link {
+    color: #990000;
+    font-weight: 900;
+}
+
+#link_faculty {
+    font-weight: 900;
+    color: #bec18f;
+}
+
+/* Section dividers */
+.section-divider {
+    height: 2px;
+    background-color: #990000;
+    margin: 0 auto;
+    position: relative;
+    border: none;
+    border-top: 20px;
+    border-bottom: 20px;
+}
+
+.section-divider::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 10px;
+    background-color: #990000;
+    border-radius: 5px;
+}
+
+.subtle-divider {
+    height: 1px;
+    background-color: #990009;
+    margin: 0 auto;
+    border: none;
+    border-top: 15px;
+    border-bottom: 15px;
 }
 
 /* Header and navigation */
@@ -41,13 +90,6 @@ header {
     position: relative;
 }
 
-.secondary-logos {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-right: 45px;
-}
-
 .logo-link {
     display: flex;
     align-items: center;
@@ -59,6 +101,13 @@ header {
     width: auto;
     max-width: 100%;
     padding: 8px 15px 0 10px;
+}
+
+.secondary-logos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 45px;
 }
 
 .banner_logo {
@@ -110,7 +159,7 @@ header {
 .side-panel a {
     padding: 15px 24px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     color: white;
     display: block;
     transition: 0.3s;
@@ -127,11 +176,6 @@ header {
 }
 
 /* Main page elements */
-.a_href {
-    position: relative;
-    bottom: 100px;
-}
-
 #main_page {
     display: flex;
     flex-direction: column;
@@ -241,7 +285,7 @@ header {
 
 .about h2 {
     margin-bottom: 30px;
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* 40px */
 }
 
 .about p {
@@ -249,6 +293,7 @@ header {
     margin: 0 auto;
     max-width: 800px;
     line-height: 1.8;
+    margin-bottom: 40px;
 }
 
 /* Buttons */
@@ -256,7 +301,7 @@ header {
     color: white;
     text-decoration: none;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     margin: 30px auto;
     background: #990000;
     width: 200px;
@@ -271,17 +316,6 @@ header {
     background: #ffffff;
     color: #990000;
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
-}
-
-/* Zapisz się section */
-.zapisz-sie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #000000;
-    color: white;
-    padding-bottom: 20px;
-    position: relative;
 }
 
 /* Details section */
@@ -302,17 +336,28 @@ header {
 .details h3 {
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* 28.8px */
 }
 
 .details-info {
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: left;
     margin: 0 auto;
     max-width: 800px;
     line-height: 1.8;
     margin-bottom: 40px;
     padding-left: 30px;
+}
+
+/* Zapisz się section */
+.zapisz-sie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding-bottom: 20px;
+    position: relative;
 }
 
 /* Modules section */
@@ -377,14 +422,14 @@ header {
 
 .module-card h3 {
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* 19.2px */
     font-weight: 900;
     margin: 0 0 20px 0;
     line-height: 1.4;
 }
 
 .module-card p {
-    font-size: 1rem;
+    font-size: 1rem; /* 16px */
     color: #888888;
     font-weight: 700;
     margin: 0;
@@ -447,15 +492,15 @@ header {
     height: 100%;
 }
 
-.contact-item:hover {
-    transform: translateX(5px);
-}
-
-
 .contact-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateX(5px);
 }
 
 .contact-item i {
@@ -471,10 +516,8 @@ header {
     flex: 1;
 }
 
-
-
 .contact-item h3 {
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
     margin: 0 0 8px 0;
     font-weight: bold;
     color: #fff;
@@ -520,48 +563,6 @@ header {
     box-shadow: 0 0 15px rgba(153, 0, 0, 0.3);
 }
 
-.link {
-    color: #990000;
-    font-weight: 900;
-}
-
-#link_faculty {
-    font-weight: 900;
-    color: #bec18f;
-}
-
-/* Dividers */
-.section-divider {
-    height: 2px;
-    background-color: #990000;
-    margin: 0 auto;
-    position: relative;
-    border: none;
-    border-top: 20px;
-    border-bottom: 20px;
-}
-
-.section-divider::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 10px;
-    background-color: #990000;
-    border-radius: 5px;
-}
-
-.subtle-divider {
-    height: 1px;
-    background-color: #990009;
-    margin: 0 auto;
-    border: none;
-    border-top: 15px;
-    border-bottom: 15px;
-}
-
 /* Footer */
 footer {
     background-color: #000000;
@@ -588,9 +589,6 @@ footer a:hover {
     }
 
     .banner_logo {
-        /* max-height: 80px; */
-        /* height: 50px; */
-        /* width: auto; */
         padding: 0;
     }
 
@@ -600,19 +598,17 @@ footer a:hover {
     }
 
     .pp_logo_desktop {
-        /* display: none; */
         padding-right: 15px;
     }
-    
-    /* .pp_logo_mobile {
-        display: inline-block;
-        padding-right: 20px;
-    } */
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        padding: 5px;
+        overflow-x: hidden;
+    }
+    
     #logo_GA {
-        /* height: 40px; */
         padding: 5px 10px 0 5px;
     }
   
@@ -623,12 +619,11 @@ footer a:hover {
     .secondary-logos {
         gap: 8px;
         margin-right: 40px;
-        height:100%;
+        height: 100%;
     }
   
     .pp_logo_desktop {
         display: none;
-        padding-right: 20px;
     }
     
     .pp_logo_mobile {
@@ -641,19 +636,14 @@ footer a:hover {
     }
   
     .image-overlay h2 {
-        font-size: 3.5rem;
+        font-size: 3.5rem; /* 56px */
         padding: 12px 25px;
     }
   
     .scroll-indicator a {
-        font-size: 2rem;
+        font-size: 2rem; /* 32px */
         width: 50px;
         height: 50px;
-    }
-    
-    header {
-        padding: 5px;
-        overflow-x: hidden;
     }
     
     .modules {
@@ -669,6 +659,7 @@ footer a:hover {
     }
 
     .details, .about {
+        font-size: 1.3rem;
         padding: 50px;
     }
 
@@ -690,28 +681,32 @@ footer a:hover {
 }
 
 @media screen and (max-width: 480px) {
+    header {
+        padding: 3px 5px;
+    }
+    
     #logo_GA {
-        /* height: 35px; */
-        padding: 4px 8px 0 3px;
+        padding: 8px 8px 0 3px;
+        height:95%;
     }
     
     .banner_logo {
-        height: 35px;
+        height: 25px;
         padding: 0 5px;
     }
   
     .secondary-logos {
-        gap: 5px;
+        gap: 2px;
         margin-right: 35px;
+        padding-top:8px;
     }
   
     .hamburger-icon {
         font-size: 24px;
         right: 5px;
-    }
-  
-    header {
-        padding: 3px 5px;
+        padding-top: 8px;
+        padding-right: 5px;
+        padding-left: 8px;
     }
   
     .image-overlay h2 {
@@ -727,5 +722,13 @@ footer a:hover {
         font-size: 1.5rem;
         width: 40px;
         height: 40px;
+    }
+
+    .details, .about {
+        font-size: 0.9rem;
+    }
+
+    .details-info {
+        font-size: 1rem;
     }
 }
