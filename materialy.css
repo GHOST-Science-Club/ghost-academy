@@ -1,0 +1,218 @@
+/* Materials page specific styles */
+
+.materials-page {
+    padding: 80px 20px 40px;
+    background-color: #000000;
+    color: white;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.materials-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+}
+
+.materials-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.materials-container {
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.materials-container p{
+    text-align: center;
+}
+
+.materials-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.material-group {
+    margin-bottom: 20px;
+    border: 1px solid rgba(50, 50, 50, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(30, 30, 30, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.material-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    background: linear-gradient(135deg, rgba(40, 40, 40, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
+    transition: all 0.3s ease;
+    border-left: 4px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.material-header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(50, 50, 50, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.material-header:hover {
+    background: linear-gradient(135deg, rgba(50, 50, 50, 0.95) 0%, rgba(30, 30, 30, 0.95) 100%);
+    border-left-color: #555;
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+.material-header:hover:before {
+    opacity: 1;
+}
+
+.material-header.active {
+    background: linear-gradient(135deg, rgba(60, 60, 60, 0.95) 0%, rgba(40, 40, 40, 0.95) 100%);
+    border-left-color: #777;
+    box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1);
+    animation: subtle-glow 3s infinite;
+}
+
+.material-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #eee;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
+}
+
+.material-header i {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #777;
+    position: relative;
+    z-index: 1;
+}
+
+.material-header:hover i {
+    color: #aaa;
+    transform: translateY(2px);
+}
+
+.material-header.active i {
+    color: #ccc;
+}
+
+.material-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: rgba(15, 15, 15, 0.7);
+    box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.material-content ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.material-content ul li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.material-content ul li:last-child {
+    margin-bottom: 0;
+}
+
+.material-content ul li:before {
+    content: '\f0da';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: #777; /* Changed from #990000 to match the new black theme */
+}
+
+.material-content ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 3px 5px;
+}
+
+.material-content ul li a:hover {
+    color: #990000;
+    text-decoration: underline;
+}
+
+.additional-materials {
+    margin-top: 60px;
+}
+
+/* Add some subtle animation for the headers */
+@keyframes subtle-glow {
+    0% { box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05); }
+    50% { box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1); }
+    100% { box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05); }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .materials-page {
+        padding: 60px 15px 30px;
+    }
+    
+    .materials-section h1 {
+        font-size: 2rem;
+    }
+    
+    .material-header h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .materials-page {
+        padding: 50px 10px 20px;
+    }
+    
+    .materials-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .materials-container h2 {
+        font-size: 1.5rem;
+    }
+    
+    .material-header {
+        padding: 12px 15px;
+    }
+    
+    .material-header h3 {
+        font-size: 1rem;
+    }
+    
+    .material-content ul {
+        padding: 15px;
+    }
+    
+    .material-content ul li {
+        padding-left: 20px;
+    }
+}

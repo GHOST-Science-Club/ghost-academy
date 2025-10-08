@@ -77,6 +77,8 @@ header {
     width: 100%;
     box-sizing: border-box;
     min-height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 #baners {
@@ -94,13 +96,14 @@ header {
     display: flex;
     align-items: center;
     margin-left: 5px;
+    height: 100%;
 }
 
 #logo_GA {
-    height: 70px;
+    height: 50px;  /* Reduced from 70px to match smaller logo */
     width: auto;
-    max-width: 100%;
-    padding: 8px 15px 0 10px;
+    padding: 5px 15px 5px 10px;  /* Adjusted padding for better vertical alignment */
+    object-fit: contain;
 }
 
 .secondary-logos {
@@ -609,7 +612,8 @@ footer a:hover {
     }
     
     #logo_GA {
-        padding: 5px 10px 0 5px;
+        height: 45px;  /* Adjusted for mobile */
+        padding: 5px 10px 5px 5px;
     }
   
     .banner_logo {
@@ -686,8 +690,8 @@ footer a:hover {
     }
     
     #logo_GA {
-        padding: 8px 8px 0 3px;
-        height:95%;
+        height: 40px;  /* Further reduced for smallest screens */
+        padding: 5px 8px 5px 3px;
     }
     
     .banner_logo {

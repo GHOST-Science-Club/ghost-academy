@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiały - GHOST Academy</title>
+    <link rel="icon" type="x-icon" href="./resources/favicon_32.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="materialy.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div id="baners">
+            <a href="index.html" class="logo-link">
+                <img src="resources/ga_logo_podluzne_bez_tla.png" alt="Logo ghost academy" id="logo_GA">
+            </a>
+            <div class="secondary-logos">
+                <img class="banner_logo" src="resources/ghost_logo_red_white.png" alt="Logo GHOST">
+                <img class="banner_logo" src="resources/PP_znak_WIiT_RGB.png" alt="Logo Wydziału Informatyki i Telekomunikacji">
+                <img class="banner_logo pp_logo_desktop" src="resources/PP_logotyp_WHITE.png" alt="Logo Politechniki Poznańskiej">
+                <img class="banner_logo pp_logo_mobile" src="resources/PP_znak_konturowy_WHITE.png" alt="Logo Politechniki Poznańskiej">
+            </div>
+            <a href="javascript:void(0);" class="hamburger-icon" onclick="toggleNav()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Side panel -->
+    <div id="sidePanel" class="side-panel">
+        <a href="index.html">Strona główna</a>
+        <a href="materialy.html">Materiały</a>
+        <a href="#contact_a">Kontakt</a>
+        <a href="regulamin.pdf">Regulamin</a>
+    </div>
+
+    <main class="materials-page">
+        <section class="materials-section">
+            <h1>Materiały edukacyjne</h1>
+            <p class="materials-intro">
+                W tej sekcji znajdziesz materiały z pierwszej edycji GHOST Academy oraz dodatkowe zasoby, 
+                które pomogą Ci zgłębić świat sztucznej inteligencji.
+            </p>
+
+            <hr class="section-divider">
+
+            <div class="materials-container">
+                <h2>Materiały z 1 edycji 2024/25</h2>
+                
+                <div class="material-group">
+                    <div class="material-header" onclick="toggleMaterial(this)">
+                        <h3>Wprowadzenie do sztucznej inteligencji</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="material-content">
+                        <ul>
+                            <li><a href="https://youtu.be/X1L1mmyJYEo?si=NOdocjANQ8Q8MSTK" target="_blank">Nagranie wykładu</a></li>
+                            <li><a href="https://colab.research.google.com/drive/1PnOQL-J4TAR7u5URAGwUGGKS5Hh1zGRK?usp=sharing" target="_blank">Materiały warsztatowe</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-header" onclick="toggleMaterial(this)">
+                        <h3>Dane – kluczowy element w uczeniu maszynowym</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="material-content">
+                        <ul>
+                            <li><a href="https://youtu.be/Owx_bppOPiQ" target="_blank">Nagranie wykładu</a></li>
+                            <li><a href="https://drive.google.com/file/d/10-FqSMxzz3hddXw2hcR8JzHaQhvd_EUQ/view?usp=sharing" target="_blank">Materiały warsztatowe</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-header" onclick="toggleMaterial(this)">
+                        <h3>Regresja – prognozowanie liczbowe</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="material-content">
+                        <ul>
+                            <li><a href="https://youtu.be/zUwwE74R4_4?si=M-mFVCC1UiOzYNOY" target="_blank">Nagranie wykładu</a></li>
+                            <li><a href="https://colab.research.google.com/drive/1i1vNmlYUsMYdZ5fcRCB8HckZsvLsi9l4?usp=sharing" target="_blank">Materiały warsztatowe</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-header" onclick="toggleMaterial(this)">
+                        <h3>Klasyfikacja — podstawowy problem w ML</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="material-content">
+                        <ul>
+                            <li><a href="https://youtu.be/1Jn9gW8QNy8?si=CY34g_ARehBhvicX" target="_blank">Nagranie wykładu</a></li>
+                            <li><a href="https://colab.research.google.com/drive/1xW0gYUTSKSegWgK7Ag0vZ50v58ds0Ks_?usp=sharing" target="_blank">Materiały warsztatowe</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-header" onclick="toggleMaterial(this)">
+                        <h3>Sieci neuronowe</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="material-content">
+                        <ul>
+                            <li><a href="https://colab.research.google.com/drive/1gLO2hOsZFo47_uxq3NIBln9nFN2eVyd_?usp=sharing" target="_blank">Materiały warsztatowe</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="section-divider">
+
+            <div class="materials-container additional-materials">
+                <h2>Dodatkowe materiały</h2>
+                    <p>Już wkrótce!</p>
+                <!-- <div class="material-group">
+                    <div class="material-header" onclick="toggleMaterial(this)">
+                        <h3>OPCJA1</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="material-content">
+                        <ul>
+                            <li><a href="#" target="_blank">LINK1</a></li>
+                            <li><a href="#" target="_blank">LINK2</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="material-group">
+                    <div class="material-header" onclick="toggleMaterial(this)">
+                        <h3>OPCJA2</h3>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="material-content">
+                        <ul>
+                            <li><a href="#" target="_blank">LINK1</a></li>
+                            <li><a href="#" target="_blank">LINK2</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <hr class="section-divider">
+    <a id="contact_a" class="a_href"></a>
+    <section id="contact" class="contact">
+        <h1>Kontakt</h1>
+        <div class="contact-container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.915206800767!2d16.948929652065097!3d52.40391544129538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b85e236103b%3A0x8030a1c59859cfa9!2sCentrum%20Wyk%C5%82adowe%20Politechniki%20Pozna%C5%84skiej!5e0!3m2!1spl!2spl!4v1757933196162!5m2!1spl!2spl" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>kontakt@ghostacademy.pl</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Adres</h3>
+                        <p>Centrum wykładowe Politechniki Poznańskiej</p>
+                        <p>ul. Piotrowo 2, 60-965 Poznań</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fa-solid fa-link"></i>
+                    <div>
+                        <h3>Bądź na bieżąco</h3>
+                        <div class="social-links">
+                            <a class="social-link" href="https://ghost.put.poznan.pl" target="_blank">
+                                <i class="fa-solid fa-globe"></i> GHOST
+                            </a>
+                            <a class="social-link" href="https://www.facebook.com/pp.ghost" target="_blank">
+                                <i class="fa-brands fa-facebook"></i> Facebook
+                            </a>
+                            <a class="social-link" href="https://www.linkedin.com/company/ghost-put/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="subtle-divider">
+    <footer>
+        <p>&copy; 2025 Wydział Informatyki i Telekomunikacji Politechniki Poznańskiej. Wszystkie prawa zastrzeżone | <a href="regulamin.pdf">Regulamin i polityka prywatności</a></p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const panel = document.getElementById("sidePanel");
+            const body = document.body;
+            if (panel.style.width === "250px") {
+                panel.style.width = "0";
+                body.style.overflow = "auto"; // Enable scrolling again
+            } else {
+                panel.style.width = "250px";
+                if (window.innerWidth <= 768) { // Only for mobile devices
+                    body.style.overflow = "hidden"; // Prevent background scrolling on mobile
+                }
+            }
+        }
+
+        function toggleMaterial(element) {
+            const content = element.nextElementSibling;
+            const icon = element.querySelector("i");
+            
+            // Toggle active class
+            element.classList.toggle("active");
+            
+            // Toggle content visibility
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                icon.className = "fa-solid fa-chevron-down";
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                icon.className = "fa-solid fa-chevron-up";
+            }
+        }
+    </script>
+</body>
+</html>
+</html>
