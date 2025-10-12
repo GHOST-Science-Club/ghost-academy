@@ -583,6 +583,50 @@ footer a:hover {
     color: #ffffff;
 }
 
+/* Materiały section */
+.materialy {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.materialy h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.materialy-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.materialy-button {
+    display: inline-block;
+    background-color: #990000;  /* Matches your red color scheme */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.materialy-button:hover {
+    background-color: #a50505;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+}
+
+.materialy-button i {
+    margin-right: 8px;
+}
+
 /* Media Queries */
 @media (max-width: 1024px) {
     .modules {
@@ -734,5 +778,12 @@ footer a:hover {
 
     .details-info {
         font-size: 1rem;
+    }
+
+    .materialy-button {
+        padding: 12px 24px;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 300px;
     }
 }
